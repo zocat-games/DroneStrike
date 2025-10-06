@@ -37,7 +37,7 @@ namespace Zocat
         /*--------------------------------------------------------------------------------------*/
         private void FixedUpdate()
         {
-            if (WeaponConfig?.ClipCurrent <= 0 && !Reloading) Reload();
+            if (WeaponConfig?.ClipCurrent <= 0 && !Reloading && WeaponConfig.StockCurrent > 0) Reload();
         }
 
         public void SetConfig(WeaponConfigSO weaponConfig)
@@ -59,6 +59,7 @@ namespace Zocat
                 EventHandler.ExecuteEvent(Owner, EventManager.Reload, false);
             });
         }
+
 
         public void Shoot()
         {

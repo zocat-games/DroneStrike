@@ -6,8 +6,7 @@ namespace Zocat
 {
     public class WeaponController : InstanceBehaviour
     {
-        public bool _shooting;
-        // public bool _zooming;
+        private bool _shooting;
         private WeaponLauncher _weaponLauncher;
 
         private void Awake()

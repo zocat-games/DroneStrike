@@ -49,10 +49,6 @@ namespace Zocat
             Reloading = value;
         }
 
-        private void Update()
-        {
-            if (!LevelManager.LevelExists) return;
-            transform.LookAt(CameraManager.RayTarget.position);
-        }
+       
     }
 }

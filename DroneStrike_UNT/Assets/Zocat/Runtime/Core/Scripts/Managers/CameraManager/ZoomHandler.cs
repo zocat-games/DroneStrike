@@ -6,59 +6,52 @@ namespace Zocat
 {
     public class ZoomHandler : SerializedInstance
     {
-        private readonly float _zoomSpeed = 3;
-        private readonly float minToggleTime = .5f;
-        private readonly int ZoomOutFov = 60;
-        private Camera _camera;
-        private float _prevFire2Time;
-        private bool _staying;
-        private bool _zooming;
-        private float currentFov;
-        private float ZoomInFov;
         private Tweener zoomTween;
+        private int[] _zoomValues = { 40, 30, 15 };
+        private int _currentIndex;
 
-        private void Awake()
+        void Start()
         {
-            // EventHandler.RegisterEvent<CategoryType>(EventManager.WeaponChanged, SetZoomValue);
-            // EventHandler.RegisterEvent(EventManager.StayingStarted, OnStayingStarted);
-            // EventHandler.RegisterEvent(EventManager.EnteringStarted, OnEnteringStarted);
-            _camera = CameraManager.ActionCamera;
-            // currentFov = ZoomOutFov;
+            ApplyZoomValue(_zoomValues[_currentIndex]);
         }
 
         private void Update()
         {
-            // _camera.fieldOfView = Mathf.Lerp(_camera.fieldOfView, currentFov, Time.deltaTime * _zoomSpeed);
-            // _camera.fieldOfView = Mathf.Lerp(_camera.fieldOfView, currentFov, Time.deltaTime * _zoomSpeed);
+            if (UiManager.GameSectionType == GameSectionType.Ui) return;
+            Scroll();
         }
 
-        private void SetZoomValue()
+        private void Scroll()
         {
-            // ZoomInFov = HeroWeaponManager.HeroWeaponSetter.WeaponConfigs[categoryType].ZoomAmount;
-            // ZoomTween(ZoomInFov);
+            float scroll = Input.GetAxis("Mouse ScrollWheel");
+
+            if (scroll > 0f)
+            {
+                _currentIndex--;
+                if (_currentIndex < 0)
+                    _currentIndex = 0;
+                OnZoomChanged(_zoomValues[_currentIndex]);
+            }
+            else if (scroll < 0f)
+            {
+                _currentIndex++;
+                if (_currentIndex >= _zoomValues.Length)
+                    _currentIndex = _zoomValues.Length - 1;
+                OnZoomChanged(_zoomValues[_currentIndex]);
+            }
         }
 
-        // private void OnStayingStarted()
-        // {
-        //     currentFov = ZoomInFov;
-        //     EventHandler.ExecuteEvent(EventManager.ZoomIn);
-        //     ZoomTween(currentFov);
-        // }
-        //
-        // private void OnEnteringStarted()
-        // {
-        //     currentFov = ZoomOutFov;
-        //     EventHandler.ExecuteEvent(EventManager.ZoomOut);
-        //     ZoomTween(currentFov);
-        // }
-        //
-        //
-        // private void ZoomTween(float value)
-        // {
-        //     // return;
-        //     zoomTween?.Kill();
-        //     zoomTween = _camera.DOFieldOfView(value, 1).SetEase(Ease.OutQuad);
-        // }
+        void OnZoomChanged(int newZoom)
+        {
+            Debug.Log("Zoom değeri değişti: " + newZoom);
+            ApplyZoomValue(newZoom);
+        }
+
+        void ApplyZoomValue(int value)
+        {
+            CameraManager.ActionCamera.fieldOfView = value;
+        }
+
         /*--------------------------------------------------------------------------------------*/
     }
 }

@@ -33,7 +33,7 @@ namespace Zocat
 
         private void SetVisuals()
         {
-            AmmoTmp.text = _config.ClipCurrent.ToString();
+            AmmoTmp.text = $"{_config.ClipCurrent}/{_config.StockCurrent}";
         }
 
         private void OnReload(bool reloading)

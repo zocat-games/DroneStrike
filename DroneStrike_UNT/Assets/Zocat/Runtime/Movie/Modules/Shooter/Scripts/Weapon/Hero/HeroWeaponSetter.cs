@@ -17,29 +17,31 @@ namespace Zocat
             EventHandler.RegisterEvent<CategoryType>(EventManager.WeaponChanged, SetSettings);
         }
 
-        private void Start()
-        {
-            SetConfigVariables();
-        }
-
         private void SetConfigVariables()
         {
             foreach (var item in WeaponConfigs)
             {
                 var itemType = item.Key.EquippedItemType();
                 var clipMax = itemType.MagazineSizeMin().x;
-                var value = item.Value;
-                value.ClipCurrent = clipMax.ToInt();
-                value.ClipMax = clipMax.ToInt();
-                value.ReloadDuration = itemType.ReloadDuration();
-                value.AudioClip = itemType.AudioClip();
-                value.DamageAmount = ItemCalculator.GetVector2Value(itemType, AttributeType.DamageMin).x;
+                var config = item.Value;
+                // config.ClipCurrent = clipMax.ToInt();
+                config.ClipMax = clipMax.ToInt();
+                config.ReloadDuration = itemType.ReloadDuration();
+                config.AudioClip = itemType.AudioClip();
+                config.DamageAmount = ItemCalculator.GetVector2Value(itemType, AttributeType.DamageMin).x;
+                // IsoHelper.Log(item.StockCurrent);
+                ShooterTools.Reload(ref config.StockCurrent, ref config.ClipCurrent, config.ClipMax, config.InfiniteAmmo);
             }
         }
 
         private void SetSettings(CategoryType categoryType)
         {
             WeaponLauncher.SetConfig(WeaponConfigs[categoryType]);
+        }
+
+        private void ReloadAtStart()
+        {
+            // ShooterTools.Reload(ref WeaponConfig.StockCurrent, ref WeaponConfig.ClipCurrent, WeaponConfig.ClipMax, WeaponConfig.InfiniteAmmo);
         }
     }
 }
