@@ -168,7 +168,6 @@ MonoBehaviour:
   Fill: {fileID: 2749220319636693038}
   Icon: {fileID: 3230404008200662837}
   Difference: {fileID: 7401167010091750499}
-  Current: {fileID: 2749220319636693038}
   Name: {fileID: 4987335282704289351}
   Value: {fileID: 1580011984693524937}
 --- !u!1 &1597696699107709936
@@ -239,8 +238,7 @@ MonoBehaviour:
   m_text: UPGRADE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 500a0e5b057a048a0bf5a21e1d5948d6, type: 2}
-  m_sharedMaterial: {fileID: 4583034190377780543, guid: 500a0e5b057a048a0bf5a21e1d5948d6,
-    type: 2}
+  m_sharedMaterial: {fileID: 4583034190377780543, guid: 500a0e5b057a048a0bf5a21e1d5948d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -572,7 +570,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 2.9000244}
-  m_SizeDelta: {x: 123.995, y: 32}
+  m_SizeDelta: {x: 179.1589, y: 32}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &4725142620123074725
 CanvasRenderer:
@@ -605,8 +603,7 @@ MonoBehaviour:
   m_text: 12/45
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 500a0e5b057a048a0bf5a21e1d5948d6, type: 2}
-  m_sharedMaterial: {fileID: 4583034190377780543, guid: 500a0e5b057a048a0bf5a21e1d5948d6,
-    type: 2}
+  m_sharedMaterial: {fileID: 4583034190377780543, guid: 500a0e5b057a048a0bf5a21e1d5948d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

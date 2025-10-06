@@ -8,7 +8,7 @@ namespace Zocat
     {
         private Tweener zoomTween;
         private int[] _zoomValues = { 40, 30, 15 };
-        private int _currentIndex;
+        private int _currentIndex = 2;
 
         void Start()
         {
@@ -43,7 +43,6 @@ namespace Zocat
 
         void OnZoomChanged(int newZoom)
         {
-            Debug.Log("Zoom değeri değişti: " + newZoom);
             ApplyZoomValue(newZoom);
         }
 

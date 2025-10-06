@@ -1,3 +1,4 @@
+using Opsive.UltimateCharacterController.Objects;
 using UnityEngine;
 
 namespace Zocat
@@ -17,6 +18,6 @@ namespace Zocat
         public AudioClip AudioClip;
         public int ZoomAmount;
         public bool RapidFire;
-        public GameObject Owner;
+        public Projectile Projectile;
     }
 }

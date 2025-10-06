@@ -28,8 +28,7 @@ namespace Zocat
                 config.ClipMax = clipMax.ToInt();
                 config.ReloadDuration = itemType.ReloadDuration();
                 config.AudioClip = itemType.AudioClip();
-                config.DamageAmount = ItemCalculator.GetVector2Value(itemType, AttributeType.DamageMin).x;
-                // IsoHelper.Log(item.StockCurrent);
+                // config.DamageAmount = ItemCalculator.GetVector2Value(itemType, AttributeType.DamageMin).x;
                 ShooterTools.Reload(ref config.StockCurrent, ref config.ClipCurrent, config.ClipMax, config.InfiniteAmmo);
             }
         }

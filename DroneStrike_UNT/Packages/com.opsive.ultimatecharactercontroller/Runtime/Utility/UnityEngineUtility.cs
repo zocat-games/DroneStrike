@@ -4,6 +4,9 @@
 /// https://www.opsive.com
 /// ---------------------------------------------
 
+using System.Reflection;
+using Zocat;
+
 namespace Opsive.UltimateCharacterController.Utility
 {
     using Opsive.Shared.Game;
@@ -40,11 +43,15 @@ namespace Opsive.UltimateCharacterController.Utility
         /// <returns>A display name for the specified type.</returns>
         public static string GetDisplayName(string fullName, string name)
         {
-            if (fullName.Contains("FirstPersonController")) {
+            if (fullName.Contains("FirstPersonController"))
+            {
                 return "First Person " + name;
-            } else if (fullName.Contains("ThirdPersonController")) {
+            }
+            else if (fullName.Contains("ThirdPersonController"))
+            {
                 return "Third Person " + name;
             }
+
             return name;
         }
 
@@ -76,7 +83,8 @@ namespace Opsive.UltimateCharacterController.Utility
         {
             s_ObjectUpdated.Add(obj);
 
-            if (autoClear && s_ObjectClearEvent == null) {
+            if (autoClear && s_ObjectClearEvent == null)
+            {
                 s_ObjectClearEvent = Scheduler.Schedule(0.0001f, ClearUpdatedObjectsEvent);
             }
         }
@@ -105,7 +113,8 @@ namespace Opsive.UltimateCharacterController.Utility
         /// <param name="spriteRectTransform">A reference to the sprite's RectTransform.</param>
         public static void SizeSprite(Sprite sprite, RectTransform spriteRectTransform)
         {
-            if (sprite != null) {
+            if (sprite != null)
+            {
                 var sizeDelta = spriteRectTransform.sizeDelta;
                 sizeDelta.x = sprite.textureRect.width;
                 sizeDelta.y = sprite.textureRect.height;
@@ -119,7 +128,10 @@ namespace Opsive.UltimateCharacterController.Utility
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         public static void ClearCache()
         {
-            if (s_ObjectUpdated != null) { s_ObjectUpdated.Clear(); }
+            if (s_ObjectUpdated != null)
+            {
+                s_ObjectUpdated.Clear();
+            }
         }
 
         /// <summary>
@@ -136,12 +148,16 @@ namespace Opsive.UltimateCharacterController.Utility
             /// <returns>The resulting difference between RaycastHit x and y.</returns>
             public int Compare(RaycastHit x, RaycastHit y)
             {
-                if (x.transform == null) {
+                if (x.transform == null)
+                {
                     return int.MaxValue;
                 }
-                if (y.transform == null) {
+
+                if (y.transform == null)
+                {
                     return int.MinValue;
                 }
+
                 return x.distance.CompareTo(y.distance);
             }
         }
@@ -159,18 +175,26 @@ namespace Opsive.UltimateCharacterController.Utility
             /// <returns>True if the raycasts are equal.</returns>
             public bool Equals(RaycastHit x, RaycastHit y)
             {
-                if (x.distance != y.distance) {
+                if (x.distance != y.distance)
+                {
                     return false;
                 }
-                if (x.point != y.point) {
+
+                if (x.point != y.point)
+                {
                     return false;
                 }
-                if (x.normal != y.normal) {
+
+                if (x.normal != y.normal)
+                {
                     return false;
                 }
-                if (x.transform != y.transform) {
+
+                if (x.transform != y.transform)
+                {
                     return false;
                 }
+
                 return true;
             }
 
@@ -183,7 +207,7 @@ namespace Opsive.UltimateCharacterController.Utility
             {
                 // Don't use hit.GetHashCode because that has boxing. This hash function won't always prevent duplicates but it's fine for what it's used for.
                 return ((int)(hit.distance * 10000)) ^ ((int)(hit.point.x * 10000)) ^ ((int)(hit.point.y * 10000)) ^ ((int)(hit.point.z * 10000)) ^
-                        ((int)(hit.normal.x * 10000)) ^ ((int)(hit.normal.y * 10000)) ^ ((int)(hit.normal.z * 10000));
+                       ((int)(hit.normal.x * 10000)) ^ ((int)(hit.normal.y * 10000)) ^ ((int)(hit.normal.z * 10000));
             }
         }
 
@@ -193,16 +217,20 @@ namespace Opsive.UltimateCharacterController.Utility
         /// <param name="array">The array that should have the null elements removed.</param>
         public static void RemoveNullElements<T>(ref T[] array)
         {
-            if (array == null) {
+            if (array == null)
+            {
                 return;
             }
 
-            for (int i = array.Length - 1; i >= 0; --i) {
-                if (array[i] != null) {
+            for (int i = array.Length - 1; i >= 0; --i)
+            {
+                if (array[i] != null)
+                {
                     continue;
                 }
 
-                for (int j = i; j < array.Length - 1; ++j) {
+                for (int j = i; j < array.Length - 1; ++j)
+                {
                     array[j] = array[j + 1];
                 }
 
@@ -215,9 +243,9 @@ namespace Opsive.UltimateCharacterController.Utility
         /// </summary>
         public enum RenderPipeline
         {
-            BuiltIn,    // Built-in Render Pipeline.
-            URP,        // Universal Render Pipeline.
-            HDRP,       // High Definition Render Pipeline.
+            BuiltIn, // Built-in Render Pipeline.
+            URP, // Universal Render Pipeline.
+            HDRP, // High Definition Render Pipeline.
         }
 
         /// <summary>
@@ -227,7 +255,8 @@ namespace Opsive.UltimateCharacterController.Utility
         public static RenderPipeline GetActiveRenderPipeline()
         {
 #if ULTIMATE_CHARACTER_CONTROLLER_UNIVERSALRP
-            if (GraphicsSettings.currentRenderPipeline != null && GraphicsSettings.currentRenderPipeline.GetType().FullName.Contains("Universal")) {
+            if (GraphicsSettings.currentRenderPipeline != null && GraphicsSettings.currentRenderPipeline.GetType().FullName.Contains("Universal"))
+            {
                 return RenderPipeline.URP;
             }
 #endif
@@ -253,13 +282,28 @@ namespace Opsive.UltimateCharacterController.Utility
         [Tooltip("The minimum magnitude value when determining a random value.")]
         [SerializeField] private Vector3 m_MinMagnitude;
 
-        public Vector3 MinValue { get { return m_MinValue; } set { m_MinValue = value; } }
-        public Vector3 MaxValue { get { return m_MaxValue; } set { m_MaxValue = value; } }
-        public Vector3 MinMagnitude { get { return m_MinMagnitude; } set { m_MinMagnitude = value; } }
+        public Vector3 MinValue
+        {
+            get { return m_MinValue; }
+            set { m_MinValue = value; }
+        }
+
+        public Vector3 MaxValue
+        {
+            get { return m_MaxValue; }
+            set { m_MaxValue = value; }
+        }
+
+        public Vector3 MinMagnitude
+        {
+            get { return m_MinMagnitude; }
+            set { m_MinMagnitude = value; }
+        }
 
         public Vector3 RandomValue
         {
-            get {
+            get
+            {
                 var value = Vector3.zero;
                 value.x = GetRandomFloat(m_MinValue.x, m_MaxValue.x, m_MinMagnitude.x);
                 value.y = GetRandomFloat(m_MinValue.y, m_MaxValue.y, m_MinMagnitude.y);
@@ -302,12 +346,17 @@ namespace Opsive.UltimateCharacterController.Utility
         /// <returns>A random float between the min and max value.</returns>
         private float GetRandomFloat(float minValue, float maxValue, float minMagnitude)
         {
-            if (minMagnitude != 0 && Mathf.Sign(m_MinValue.x) != Mathf.Sign(m_MaxValue.x)) {
-                if (Mathf.Sign(UnityEngine.Random.Range(m_MinValue.x, m_MaxValue.x)) > 0) {
+            if (minMagnitude != 0 && Mathf.Sign(m_MinValue.x) != Mathf.Sign(m_MaxValue.x))
+            {
+                if (Mathf.Sign(UnityEngine.Random.Range(m_MinValue.x, m_MaxValue.x)) > 0)
+                {
                     return UnityEngine.Random.Range(minMagnitude, Mathf.Max(minMagnitude, maxValue));
                 }
+
                 return UnityEngine.Random.Range(-minMagnitude, Mathf.Min(-minMagnitude, minValue));
-            } else {
+            }
+            else
+            {
                 return UnityEngine.Random.Range(minValue, maxValue);
             }
         }
@@ -328,9 +377,20 @@ namespace Opsive.UltimateCharacterController.Utility
         [SerializeField] private bool m_RandomSpin;
 #pragma warning restore 0649
 
-        public GameObject Object { get { return m_Object; } }
-        public float Probability { get { return m_Probability; } }
-        public bool RandomSpin { get { return m_RandomSpin; } }
+        public GameObject Object
+        {
+            get { return m_Object; }
+        }
+
+        public float Probability
+        {
+            get { return m_Probability; }
+        }
+
+        public bool RandomSpin
+        {
+            get { return m_RandomSpin; }
+        }
 
         /// <summary>
         /// Instantiate the object.
@@ -341,25 +401,32 @@ namespace Opsive.UltimateCharacterController.Utility
         /// <returns>The instantiated object (can be null). </returns>
         public GameObject Instantiate(Vector3 position, Vector3 normal, Vector3 gravityDirection)
         {
-            if (m_Object == null) {
+            if (m_Object == null)
+            {
                 return null;
             }
 
             // There is a random chance that the object cannot be spawned.
-            if (UnityEngine.Random.value < m_Probability) {
+            if (UnityEngine.Random.value < m_Probability)
+            {
                 var rotation = Quaternion.LookRotation(normal);
                 // A random spin can be applied so the rotation isn't the same every hit.
-                if (m_RandomSpin) {
+                if (m_RandomSpin)
+                {
                     rotation *= Quaternion.AngleAxis(UnityEngine.Random.Range(0, 360), normal);
                 }
+
                 var instantiatedObject = ObjectPoolBase.Instantiate(m_Object, position, rotation);
                 // If the DirectionalConstantForce component exists then the gravity direction should be set so the object will move in the correct direction.
                 var directionalConstantForce = instantiatedObject.GetCachedComponent<Traits.DirectionalConstantForce>();
-                if (directionalConstantForce != null) {
+                if (directionalConstantForce != null)
+                {
                     directionalConstantForce.Direction = gravityDirection;
                 }
+
                 return instantiatedObject;
             }
+
             return null;
         }
     }
@@ -384,21 +451,66 @@ namespace Opsive.UltimateCharacterController.Utility
         [Tooltip("The render queue of the material.")]
         private int m_RenderQueue;
 
-        public Color Color { get { return m_Color; } set { m_Color = value; } }
-        public bool ContainsMode { get { return m_ContainsMode; } set { m_ContainsMode = value; } }
-        public float Mode { get { return m_Mode; } set { m_Mode = value; } }
-        public int SrcBlend { get { return m_SrcBlend; } set { m_SrcBlend = value; } }
-        public int DstBlend { get { return m_DstBlend; } set { m_DstBlend = value; } }
-        public bool AlphaBlend { get { return m_AlphaBlend; } set { m_AlphaBlend = value; } }
-        public int RenderQueue { get { return m_RenderQueue; } set { m_RenderQueue = value; } }
+        public Color Color
+        {
+            get { return m_Color; }
+            set { m_Color = value; }
+        }
+
+        public bool ContainsMode
+        {
+            get { return m_ContainsMode; }
+            set { m_ContainsMode = value; }
+        }
+
+        public float Mode
+        {
+            get { return m_Mode; }
+            set { m_Mode = value; }
+        }
+
+        public int SrcBlend
+        {
+            get { return m_SrcBlend; }
+            set { m_SrcBlend = value; }
+        }
+
+        public int DstBlend
+        {
+            get { return m_DstBlend; }
+            set { m_DstBlend = value; }
+        }
+
+        public bool AlphaBlend
+        {
+            get { return m_AlphaBlend; }
+            set { m_AlphaBlend = value; }
+        }
+
+        public int RenderQueue
+        {
+            get { return m_RenderQueue; }
+            set { m_RenderQueue = value; }
+        }
 
         private static int s_SrcBlendID;
         private static int s_DstBlendID;
         private static string s_AlphaBlendString = "_ALPHABLEND_ON";
 
-        public static int SrcBlendID { get { return s_SrcBlendID; } }
-        public static int DstBlendID { get { return s_DstBlendID; } }
-        public static string AlphaBlendString { get { return s_AlphaBlendString; } }
+        public static int SrcBlendID
+        {
+            get { return s_SrcBlendID; }
+        }
+
+        public static int DstBlendID
+        {
+            get { return s_DstBlendID; }
+        }
+
+        public static string AlphaBlendString
+        {
+            get { return s_AlphaBlendString; }
+        }
 
         /// <summary>
         /// Initializes the OriginalMaterialValue.
@@ -422,7 +534,8 @@ namespace Opsive.UltimateCharacterController.Utility
             m_AlphaBlend = material.IsKeywordEnabled(s_AlphaBlendString);
             m_RenderQueue = material.renderQueue;
             m_ContainsMode = modeID != 0;
-            if (modeID != 0) {
+            if (modeID != 0)
+            {
                 m_Mode = material.GetFloat(modeID);
                 m_SrcBlend = material.GetInt(s_SrcBlendID);
                 m_DstBlend = material.GetInt(s_DstBlendID);
@@ -456,7 +569,10 @@ namespace Opsive.UltimateCharacterController.Utility
     {
         private Type m_BaseType;
 
-        public Type BaseType { get => m_BaseType; }
+        public Type BaseType
+        {
+            get => m_BaseType;
+        }
 
         /// <summary>
         /// DropdownSelectionAttribute constructor.
@@ -490,5 +606,7 @@ namespace Opsive.UltimateCharacterController.Utility
     /// Specifies that the field should not be copied by the Reference Resolver.
     /// </summary>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
-    public class IgnoreReferences : Attribute { }
+    public class IgnoreReferences : Attribute
+    {
+    }
 }

@@ -11,7 +11,7 @@ namespace Zocat
         public List<CategoryType> WeaponCategories;
         public bool Reloading { get; set; }
         public CategoryType CurrentCategory { get; set; }
-        public ItemType CurrentItem => CurrentCategory.EquippedItemType();
+        public ItemType CurrentItemType => CurrentCategory.EquippedItemType();
         public bool RapidFire { get; private set; }
 
         private int LastWeaponIndex
@@ -38,7 +38,7 @@ namespace Zocat
         public void SetCurrentCategory(CategoryType category)
         {
             CurrentCategory = category;
-            RapidFire = CurrentItem.RapidFire();
+            RapidFire = CurrentItemType.RapidFire();
             LastWeaponIndex = category.CategoryIndex();
             EventHandler.ExecuteEvent(EventManager.WeaponChanged, category);
         }

@@ -77,6 +77,7 @@ namespace Zocat
         {
             HideAll();
             // GamepadPanel.Show();
+            CrosshairPanel.Show();
             WeaponPanel.Show();
             BackButtonPanel.Show();
             HealthPanel.Show();

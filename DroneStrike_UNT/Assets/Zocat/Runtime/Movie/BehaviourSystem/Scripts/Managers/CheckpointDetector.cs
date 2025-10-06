@@ -22,14 +22,14 @@ namespace Zocat
 
         private void AfterCreateLevel()
         {
-            LevelManager.CurrentLevel.Sectors[_checkPointIndex].CreateEnemies();
+            // LevelManager.CurrentLevel.Sectors[_checkPointIndex].CreateEnemies();
         }
 
         public void StartEntering()
         {
-            HeroMain.Mover.SetTarget(NextCheckPoint.transform);
-            LevelManager.CurrentLevel.Sectors[_checkPointIndex + 1].CreateEnemies();
-            EventHandler.ExecuteEvent(EventManager.EnteringStarted);
+            // HeroMain.Mover.SetTarget(NextCheckPoint.transform);
+            // LevelManager.CurrentLevel.Sectors[_checkPointIndex + 1].CreateEnemies();
+            // EventHandler.ExecuteEvent(EventManager.EnteringStarted);
         }
 
         private void OnStayingStarted()

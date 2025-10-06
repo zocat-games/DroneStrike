@@ -29,7 +29,7 @@ namespace Opsive.UltimateCharacterController.Objects
     {
         public GameObject Owner { get; }
         Component SourceComponent { get; }
-        
+
         IDamageSource DamageSource { get; }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace Opsive.UltimateCharacterController.Objects
         /// <param name="impactContext">The impact data.</param>
         public void OnProjectileImpact(ProjectileBase projectile, ImpactCallbackContext impactContext);
     }
-    
+
     /// <summary>
     /// The Destructible class is an abstract class which acts as the base class for any object that destroys itself and applies a damange.
     /// Primary uses include projectiles and grenades.
@@ -55,7 +55,7 @@ namespace Opsive.UltimateCharacterController.Objects
     [RequireComponent(typeof(Rigidbody))]
     public abstract class ProjectileBase : TrajectoryObject
     {
-        public event Action<ProjectileBase, ImpactCallbackContext> OnImpact; 
+        public event Action<ProjectileBase, ImpactCallbackContext> OnImpact;
         public event Action<ProjectileBase, Vector3, Vector3> OnDestruct;
 
         [Tooltip("Disable the collider on impact?")]
@@ -79,16 +79,59 @@ namespace Opsive.UltimateCharacterController.Objects
         [SerializeField] protected bool m_InternalImpact = true;
         [Tooltip("A list of actions when the object impacts with something.")]
         [SerializeField] protected ImpactActionGroup m_ImpactActionGroup = ImpactActionGroup.DefaultDamageGroup(true);
-        
-        public LayerMask StickyLayers { get { return m_StickyLayers; } set { m_StickyLayers = value; } }
-        public bool DestroyOnCollision { get { return m_DestroyOnCollision; } set { m_DestroyOnCollision = value; } }
-        public bool WaitForParticleStop { get { return m_WaitForParticleStop; } set { m_WaitForParticleStop = value; } }
-        public float DestructionDelay { get { return m_DestructionDelay; } set { m_DestructionDelay = value; } }
-        public ObjectSpawnInfo[] SpawnedObjectsOnDestruction { get { return m_SpawnedObjectsOnDestruction; } set { m_SpawnedObjectsOnDestruction = value; } }
-        public ImpactDamageData DefaultImpactDamageData { get { return m_DefaultImpactDamageData; } set { m_DefaultImpactDamageData = value; } }
-        public bool InternalImpact { get { return m_InternalImpact; } set { m_InternalImpact = value; } }
-        public ImpactActionGroup ImpactActionGroup { get { return m_ImpactActionGroup; } set { m_ImpactActionGroup = value; } }
-        public IImpactDamageData ImpactDamageData { get { return m_ImpactDamageData; } }
+
+        public LayerMask StickyLayers
+        {
+            get { return m_StickyLayers; }
+            set { m_StickyLayers = value; }
+        }
+
+        public bool DestroyOnCollision
+        {
+            get { return m_DestroyOnCollision; }
+            set { m_DestroyOnCollision = value; }
+        }
+
+        public bool WaitForParticleStop
+        {
+            get { return m_WaitForParticleStop; }
+            set { m_WaitForParticleStop = value; }
+        }
+
+        public float DestructionDelay
+        {
+            get { return m_DestructionDelay; }
+            set { m_DestructionDelay = value; }
+        }
+
+        public ObjectSpawnInfo[] SpawnedObjectsOnDestruction
+        {
+            get { return m_SpawnedObjectsOnDestruction; }
+            set { m_SpawnedObjectsOnDestruction = value; }
+        }
+
+        public ImpactDamageData DefaultImpactDamageData
+        {
+            get { return m_DefaultImpactDamageData; }
+            set { m_DefaultImpactDamageData = value; }
+        }
+
+        public bool InternalImpact
+        {
+            get { return m_InternalImpact; }
+            set { m_InternalImpact = value; }
+        }
+
+        public ImpactActionGroup ImpactActionGroup
+        {
+            get { return m_ImpactActionGroup; }
+            set { m_ImpactActionGroup = value; }
+        }
+
+        public IImpactDamageData ImpactDamageData
+        {
+            get { return m_ImpactDamageData; }
+        }
 
         protected uint m_ID;
         protected IProjectileOwner m_ProjectileOwner;
@@ -105,8 +148,12 @@ namespace Opsive.UltimateCharacterController.Objects
         private INetworkInfo m_NetworkInfo;
         private IDestructibleMonitor m_DestructibleMonitor;
 #endif
-        
-        public uint ID { get { return m_ID; } set { m_ID = value; } }
+
+        public uint ID
+        {
+            get { return m_ID; }
+            set { m_ID = value; }
+        }
 
         /// <summary>
         /// Initialize the defualt values.
@@ -120,17 +167,21 @@ namespace Opsive.UltimateCharacterController.Objects
             m_ImpactActionGroup.Initialize(gameObject, null);
 
             m_TrailRenderer = GetComponent<TrailRenderer>();
-            if (m_TrailRenderer != null) {
+            if (m_TrailRenderer != null)
+            {
                 m_TrailRenderer.enabled = false;
             }
+
             m_ParticleSystem = GetComponent<ParticleSystem>();
-            if (m_ParticleSystem != null) {
+            if (m_ParticleSystem != null)
+            {
                 m_ParticleSystem.Stop();
             }
 
             // The Rigidbody is only used to notify Unity that the object isn't static. The Rigidbody doesn't control any movement.
             var destructableRigidbody = GetComponent<Rigidbody>();
-            if (destructableRigidbody != null) {
+            if (destructableRigidbody != null)
+            {
                 destructableRigidbody.mass = m_Mass;
                 destructableRigidbody.isKinematic = true;
                 destructableRigidbody.constraints = RigidbodyConstraints.FreezeAll;
@@ -140,7 +191,8 @@ namespace Opsive.UltimateCharacterController.Objects
             m_DestructibleMonitor = GetComponent<IDestructibleMonitor>();
 #endif
 
-            if (m_DestroyOnCollision && m_CollisionMode != CollisionMode.Collide) {
+            if (m_DestroyOnCollision && m_CollisionMode != CollisionMode.Collide)
+            {
                 Debug.LogWarning($"Warning: The Destructible {name} will be destroyed on collision but does not have a Collision Mode set to Collide.");
                 m_CollisionMode = CollisionMode.Collide;
             }
@@ -162,7 +214,7 @@ namespace Opsive.UltimateCharacterController.Objects
 
             base.Initialize(velocity, torque, owner);
         }
-        
+
         /// <summary>
         /// Initializes the object. This will be called from an object creating the projectile (such as a weapon).
         /// </summary>
@@ -173,12 +225,15 @@ namespace Opsive.UltimateCharacterController.Objects
         /// <param name="owner">The object that instantiated the trajectory object.</param>
         public virtual void Initialize(uint id, Vector3 velocity, Vector3 torque, IProjectileOwner owner, IImpactDamageData impactDamageData)
         {
-            if (impactDamageData == null) {
+            if (impactDamageData == null)
+            {
                 InitializeProjectileProperties(id, m_DefaultImpactDamageData);
-            } else {
+            }
+            else
+            {
                 InitializeProjectileProperties(id, impactDamageData);
             }
-            
+
             m_ProjectileOwner = owner;
 
             base.Initialize(velocity, torque, m_ProjectileOwner.DamageSource);
@@ -201,21 +256,24 @@ namespace Opsive.UltimateCharacterController.Objects
         public void InitializeProjectileProperties(uint id, IImpactDamageData impactDamageData, bool useObjectImpactLayerAndSurface = false)
         {
             m_ID = id;
-            
-            if (impactDamageData == null) {
+
+            if (impactDamageData == null)
+            {
                 Debug.LogError("The impact damage data cannot be null.");
                 return;
             }
-            
+
             m_Destroyed = false;
-            if (m_DestroyEvent != null) {
+            if (m_DestroyEvent != null)
+            {
                 Scheduler.Cancel(m_DestroyEvent);
                 m_DestroyEvent = null;
             }
 
             m_ImpactDamageData = impactDamageData;
 
-            if (!m_UseObjectImpactLayerAndSurface && !useObjectImpactLayerAndSurface) {
+            if (!m_UseObjectImpactLayerAndSurface && !useObjectImpactLayerAndSurface)
+            {
                 // The Impact layers can be set directly on the destructible prefab.
                 m_ImpactLayers = impactDamageData.LayerMask;
 
@@ -224,21 +282,29 @@ namespace Opsive.UltimateCharacterController.Objects
             }
 
             Shared.Events.EventHandler.ExecuteEvent(gameObject, "OnRespawn");
-            if (m_TrailRenderer != null) {
+            if (m_TrailRenderer != null)
+            {
                 m_TrailRenderer.Clear();
                 m_TrailRenderer.enabled = true;
             }
-            if (m_ParticleSystem != null) {
+
+            if (m_ParticleSystem != null)
+            {
                 m_ParticleSystem.Play();
             }
-            if (m_Collider != null) {
+
+            if (m_Collider != null)
+            {
                 m_Collider.enabled = false;
             }
+
             // The object may be reused and was previously stuck to a character.
-            if (m_StickyCharacterLocomotion != null) {
+            if (m_StickyCharacterLocomotion != null)
+            {
                 m_StickyCharacterLocomotion.RemoveIgnoredCollider(m_Collider);
                 m_StickyCharacterLocomotion = null;
             }
+
             enabled = true;
         }
 
@@ -270,71 +336,89 @@ namespace Opsive.UltimateCharacterController.Objects
         protected override void OnCollision(RaycastHit? hit)
         {
             // The object may not have been initialized before it collides.
-            if (m_GameObject == null) {
+            if (m_GameObject == null)
+            {
                 InitializeComponentReferences();
             }
-            
+
             base.OnCollision(hit);
 
             var forceDestruct = false;
-            if (m_CollisionMode == CollisionMode.Collide) {
+            if (m_CollisionMode == CollisionMode.Collide)
+            {
                 // When there is a collision the object should move to the position that was hit so if it's not destroyed then it looks like it
                 // is penetrating the hit object.
-                if (hit != null && hit.HasValue && m_Collider != null) {
-                    if (!m_DestroyOnCollision) {
+                if (hit != null && hit.HasValue && m_Collider != null)
+                {
+                    if (!m_DestroyOnCollision)
+                    {
                         var closestPoint = m_Collider.ClosestPointOnBounds(hit.Value.point);
                         m_Transform.position += (hit.Value.point - closestPoint);
                     }
+
                     // Only set the parent to the hit transform on uniform objects to prevent stretching.
-                    if (MathUtility.IsUniform(hit.Value.transform.localScale)) {
+                    if (MathUtility.IsUniform(hit.Value.transform.localScale))
+                    {
                         // The parent layer must be within the sticky layer mask.
-                        if (MathUtility.InLayerMask(hit.Value.transform.gameObject.layer, m_StickyLayers)) {
+                        if (MathUtility.InLayerMask(hit.Value.transform.gameObject.layer, m_StickyLayers))
+                        {
                             m_Transform.parent = hit.Value.transform;
 
                             // If the destructible sticks to a character then the object should be added as a sub collider so collisions will be ignored.
                             m_StickyCharacterLocomotion = hit.Value.transform.gameObject.GetCachedComponent<UltimateCharacterLocomotion>();
-                            if (m_StickyCharacterLocomotion != null) {
+                            if (m_StickyCharacterLocomotion != null)
+                            {
                                 m_StickyCharacterLocomotion.AddIgnoredCollider(m_Collider);
                             }
-                        } else {
+                        }
+                        else
+                        {
                             forceDestruct = true;
                         }
                     }
                 }
-                if (m_TrailRenderer != null) {
+
+                if (m_TrailRenderer != null)
+                {
                     m_TrailRenderer.enabled = false;
                 }
             }
 
             var destructionDelay = m_DestructionDelay;
-            if (m_ParticleSystem != null && m_WaitForParticleStop) {
+            if (m_ParticleSystem != null && m_WaitForParticleStop)
+            {
                 destructionDelay = m_ParticleSystem.main.duration;
                 m_ParticleSystem.Stop(true, ParticleSystemStopBehavior.StopEmitting);
                 Stop();
             }
 
-            if (hit != null && hit.HasValue) {
+            if (hit != null && hit.HasValue)
+            {
                 var impactData = GetImpactData(hit.Value);
                 var impactCallback = m_CachedImpactCallbackContext;
                 impactCallback.ImpactCollisionData = impactData;
                 impactCallback.ImpactDamageData = m_ImpactDamageData;
-                
+
                 OnImpact?.Invoke(this, impactCallback);
                 m_ProjectileOwner?.OnProjectileImpact(this, impactCallback);
 
-                if (m_InternalImpact) {
+                if (m_InternalImpact)
+                {
                     m_ImpactActionGroup.OnImpact(impactCallback, true);
                 }
             }
-            
-            if (m_DisableColliderOnImpact) {
-                if (m_Collider != null) {
+
+            if (m_DisableColliderOnImpact)
+            {
+                if (m_Collider != null)
+                {
                     m_Collider.enabled = false;
                 }
             }
 
             // The object can destroy itself after a small delay.
-            if (m_DestroyEvent == null && (m_DestroyOnCollision || forceDestruct || destructionDelay > 0)) {
+            if (m_DestroyEvent == null && (m_DestroyOnCollision || forceDestruct || destructionDelay > 0))
+            {
                 m_DestroyEvent = Scheduler.ScheduleFixed(destructionDelay, Destruct, hit);
             }
         }
@@ -345,7 +429,8 @@ namespace Opsive.UltimateCharacterController.Objects
         /// <param name="hit">The RaycastHit of the object. Can be null.</param>
         public virtual void Destruct(RaycastHit? hit)
         {
-            if (m_Destroyed) {
+            if (m_Destroyed)
+            {
                 return;
             }
 
@@ -378,28 +463,39 @@ namespace Opsive.UltimateCharacterController.Objects
             OnDestruct?.Invoke(this, hitPosition, hitNormal);
             m_ProjectileOwner?.OnProjectileDestruct(this, hitPosition, hitNormal);
 
-            for (int i = 0; i < m_SpawnedObjectsOnDestruction.Length; ++i) {
-                if (m_SpawnedObjectsOnDestruction[i] == null) {
+            for (int i = 0; i < m_SpawnedObjectsOnDestruction.Length; ++i)
+            {
+                if (m_SpawnedObjectsOnDestruction[i] == null)
+                {
                     continue;
                 }
 
+
+                // var spawnedObject = ObjectPool.Instantiate(m_SpawnedObjectsOnDestruction[i]., hitPosition, hitNormal);
                 var spawnedObject = m_SpawnedObjectsOnDestruction[i].Instantiate(hitPosition, hitNormal, m_NormalizedGravity);
-                if (spawnedObject == null) {
+                if (spawnedObject == null)
+                {
                     continue;
                 }
+
                 var explosion = spawnedObject.GetCachedComponent<Explosion>();
-                if (explosion != null) {
+                if (explosion != null)
+                {
                     explosion.Explode(m_ImpactDamageData, m_GameObject, m_OwnerDamageSource);
                 }
             }
 
             // The component and collider no longer need to be enabled after the object has been destroyed.
-            if (m_Collider != null) {
+            if (m_Collider != null)
+            {
                 m_Collider.enabled = false;
             }
-            if (m_ParticleSystem != null) {
+
+            if (m_ParticleSystem != null)
+            {
                 m_ParticleSystem.Stop();
             }
+
             m_Destroyed = true;
             m_DestroyEvent = null;
             enabled = false;
@@ -425,11 +521,13 @@ namespace Opsive.UltimateCharacterController.Objects
         {
             base.OnDisable();
 
-            if (m_TrailRenderer != null) {
+            if (m_TrailRenderer != null)
+            {
                 m_TrailRenderer.enabled = false;
             }
 
-            if (m_DestroyOnCollision && m_StickyCharacterLocomotion != null) {
+            if (m_DestroyOnCollision && m_StickyCharacterLocomotion != null)
+            {
                 m_StickyCharacterLocomotion.RemoveIgnoredCollider(m_Collider);
                 m_StickyCharacterLocomotion = null;
             }

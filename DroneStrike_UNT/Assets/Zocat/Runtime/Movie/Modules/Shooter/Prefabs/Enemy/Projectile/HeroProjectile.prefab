@@ -89,10 +89,10 @@ MonoBehaviour:
   m_StartSidewaysVelocityMagnitude: 3
   m_ImpactLayers:
     serializedVersion: 2
-    m_Bits: 67108865
-  m_SurfaceImpact: {fileID: 11400000, guid: f49abdd3bca87e54cb474256211b133e, type: 2}
-  m_ForceMultiplier: 40
-  m_CollisionMode: 0
+    m_Bits: 0
+  m_SurfaceImpact: {fileID: 0}
+  m_ForceMultiplier: 0
+  m_CollisionMode: 3
   m_ReflectMultiplier: 1
   m_MaxCollisionCount: 5
   m_MaxPositionCount: 150
@@ -105,30 +105,32 @@ MonoBehaviour:
   m_DisableColliderOnImpact: 1
   m_StickyLayers:
     serializedVersion: 2
-    m_Bits: 201327043
+    m_Bits: 0
   m_DestroyOnCollision: 1
   m_WaitForParticleStop: 0
   m_DestructionDelay: 0.1
-  m_SpawnedObjectsOnDestruction: []
+  m_SpawnedObjectsOnDestruction:
+  - m_Object: {fileID: 100000, guid: 92822eb9d299b144dbc033cdfc66d4b4, type: 3}
+    m_Probability: 0
+    m_RandomSpin: 0
   m_UseObjectImpactLayerAndSurface: 0
   m_DefaultImpactDamageData:
     m_LayerMask:
       serializedVersion: 2
       m_Bits: 3959423267
     m_DamageProcessor: {fileID: 0}
-    m_DamageAmount: 10
-    m_ImpactForce: 2
-    m_ImpactForceFrames: 15
+    m_DamageAmount: 0
+    m_ImpactForce: 0
+    m_ImpactForceFrames: 0
     m_ImpactRadius: 0
     m_ImpactStateName: 
-    m_ImpactStateDisableTimer: 10
+    m_ImpactStateDisableTimer: 0
     m_SurfaceImpact: {fileID: 0}
   m_InternalImpact: 1
   m_ImpactActionGroup:
     m_ImpactActions:
     - rid: 6628036472669208576
     - rid: 6628036872513519617
-    - rid: 6628036872513519616
   m_Lifespan: 5
   references:
     version: 2
@@ -148,28 +150,13 @@ MonoBehaviour:
         m_AllowMultiHits: 0
         m_UseContextData: 1
         m_SetDamageImpactData: 1
-        m_InvokeOnObjectImpact: 0
-        m_DamageProcessor: {fileID: 0}
-        m_DamageAmount: 10
-        m_ImpactForce: 2
-        m_ImpactForceFrames: 15
+        m_InvokeOnObjectImpact: 1
+        m_DamageProcessor: {fileID: 11400000, guid: 23680b60f6f0c41078e24c73e67fd5ff, type: 2}
+        m_DamageAmount: 0
+        m_ImpactForce: 0
+        m_ImpactForceFrames: 0
         m_ImpactRadius: 0
         m_ScaleDamageByImpactStrength: 0
-    - rid: 6628036872513519616
-      type: {class: ImpactEvent, ns: Opsive.UltimateCharacterController.Items.Actions.Impact, asm: Opsive.UltimateCharacterController}
-      data:
-        m_States:
-        - m_Name: Default
-          m_Preset: {fileID: 0}
-          m_BlockList: []
-          m_Default: 1
-        m_Bindings:
-          m_Bindings: []
-        m_Enabled: 1
-        m_Delay: 0
-        m_AllowMultiHits: 0
-        m_CallImpactCallbackOnOriginator: 1
-        m_CallImpactCallbackOnTarget: 1
     - rid: 6628036872513519617
       type: {class: SpawnSurfaceEffect, ns: Opsive.UltimateCharacterController.Items.Actions.Impact, asm: Opsive.UltimateCharacterController}
       data:

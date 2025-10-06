@@ -138,7 +138,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa6515d381c765d7637d5a10ab6e2fef3fb89
       m_ValuePositions: 00000000090000000a0000000a0000000e0000000e000000120000001a000000
-      m_Values: 44616d6167654d696e010100000047105826000020420000c842000020420000c842
+      m_Values: 44616d6167654d696e01010000004710582600002042000020410000204200002041
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: 'Opsive.UltimateInventorySystem.Core.AttributeSystem.Attribute`1[[UnityEngine.Vector2,
@@ -146,7 +146,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa6515d381c765d7637d5a10ab6e2fef3fb89
       m_ValuePositions: 000000000600000007000000070000000b0000000b0000000f00000017000000
-      m_Values: 5261646975730101000000aaa39d48000020410000f041000020410000f041
+      m_Values: 5261646975730101000000aaa39d4800002041000000400000204100000040
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: 'Opsive.UltimateInventorySystem.Core.AttributeSystem.Attribute`1[[System.Int32,

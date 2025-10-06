@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Zocat
@@ -17,11 +18,12 @@ namespace Zocat
             Name.text = so.Name;
             Icon.sprite = so.Sprite;
             /*--------------------------------------------------------------------------------------*/
+            var raw = itemType.GetAttributeValue<Vector2>(attributeType);
             var value = ItemCalculator.GetVector2Value(itemType, attributeType);
-            Value.text = $"{(int)value.x}/{(int)value.y}";
+            Value.text = $"{(int)value.x}/{(int)(value.y)}";
             SetFill(value.x / value.y);
             /*--------------------------------------------------------------------------------------*/
-            Difference.fillAmount = ItemCalculator.GetFloatValue(itemType, attributeType);
+            Difference.fillAmount = (value.x + raw.y) / value.y;
         }
     }
 }
