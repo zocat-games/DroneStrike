@@ -1,0 +1,20 @@
+namespace Zocat
+{
+public class #SCRIPTNAME#  : UIPanel 
+{
+        public override void Initialize()
+        {
+            base.Initialize();
+        }
+
+        public override void ShowPanel(bool fade = false)
+        {
+            base.ShowPanel(fade);
+        }
+
+    /*--------------------------------------------------------------------------------------*/
+    
+    /*--------------------------------------------------------------------------------------*/
+
+}
+}

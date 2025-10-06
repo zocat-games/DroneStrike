@@ -1,0 +1,17 @@
+
+using UnityEngine;
+
+namespace Zocat
+{
+public class #SCRIPTNAME# : CustomBehaviour
+{
+    public override void Initialize()
+    {
+        base.Initialize();
+    }
+    /*--------------------------------------------------------------------------------------*/
+    
+    /*--------------------------------------------------------------------------------------*/    
+}
+
+}

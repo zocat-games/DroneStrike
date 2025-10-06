@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c2efe4f9ac52777498682b223bff489c
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/ControlFreak2.asmdef
+  uploadId: 748026

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4e554851150660f40b787cb168712867
+timeCreated: 1461430545
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Shared-Assets/Level-Elements/Materials/Crate_A-lambert1.mat
+  uploadId: 748026

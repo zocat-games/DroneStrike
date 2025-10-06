@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b1005d6409cef3040b6b585028ef6215
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/Gamepads/GamepadNotifier/NotificationElementGUI.cs
+  uploadId: 748026

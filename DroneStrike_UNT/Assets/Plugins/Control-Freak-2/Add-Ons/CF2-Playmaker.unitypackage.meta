@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 41d2ac15423e16d408353540a85b6192
+timeCreated: 1456489494
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Add-Ons/CF2-Playmaker.unitypackage
+  uploadId: 748026

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f467acaf5555d974d88a26bc6b49fb49
+timeCreated: 1450731818
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Rigs/Other/CF2-JRPG.prefab
+  uploadId: 748026

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d33b91bfef57c4b47a1cf9515487c2bc
+timeCreated: 1459699748
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Rigs/Aircraft/CF2-Aircraft-Rig.prefab
+  uploadId: 748026

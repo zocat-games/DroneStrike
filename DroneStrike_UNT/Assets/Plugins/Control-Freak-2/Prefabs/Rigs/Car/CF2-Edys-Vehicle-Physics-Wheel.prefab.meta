@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c04b4088653f53446a02783af93a2b54
+timeCreated: 1473096758
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Rigs/Car/CF2-Edys-Vehicle-Physics-Wheel.prefab
+  uploadId: 748026

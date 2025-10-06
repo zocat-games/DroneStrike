@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6878b81474c7fd642908234a83b9d217
+timeCreated: 1450724457
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Debug/Prefabs/CF2-Webplayer-Touch-Marker-GUI.prefab
+  uploadId: 748026

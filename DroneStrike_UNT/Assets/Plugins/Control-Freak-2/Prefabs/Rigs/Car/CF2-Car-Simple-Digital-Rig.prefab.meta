@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ec6aa6cee8b13584695f7be8d9e9edc1
+timeCreated: 1458078899
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Rigs/Car/CF2-Car-Simple-Digital-Rig.prefab
+  uploadId: 748026

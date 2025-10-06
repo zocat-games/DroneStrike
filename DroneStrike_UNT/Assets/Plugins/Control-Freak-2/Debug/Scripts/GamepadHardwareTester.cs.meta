@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f9d74a73115992048be77723874eca16
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Debug/Scripts/GamepadHardwareTester.cs
+  uploadId: 748026

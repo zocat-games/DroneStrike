@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9ab7e82176dd9594689c94982de86407
+timeCreated: 1459862827
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Shared-Assets/Demo-Chara/Player/Materials/MuzzleFlash-lambert21.mat
+  uploadId: 748026

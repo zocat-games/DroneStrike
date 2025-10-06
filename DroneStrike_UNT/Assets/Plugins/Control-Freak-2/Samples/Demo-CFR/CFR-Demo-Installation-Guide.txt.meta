@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 646ad6c018cbc5e41815c9775678c2f8
+timeCreated: 1459345724
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Demo-CFR/CFR-Demo-Installation-Guide.txt
+  uploadId: 748026

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 06d2494861373ad408fdda804ecdd1b0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/Gamepads/ProfileBanks/BuiltInGamepadProfileBankPS5.cs
+  uploadId: 748026

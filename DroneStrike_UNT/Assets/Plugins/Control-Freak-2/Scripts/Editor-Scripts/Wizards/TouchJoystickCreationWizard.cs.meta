@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 556e8a1b7921853418a0d509b56f86ac
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/Editor-Scripts/Wizards/TouchJoystickCreationWizard.cs
+  uploadId: 748026

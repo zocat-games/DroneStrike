@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4f3662a9319d0554cb21ee14edb15c95
+timeCreated: 1452624936
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Demo-Dual-Stick-Shooter/Prefab/Test-Chara.prefab
+  uploadId: 748026

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 374118ffde5085e4690327190a2007e1
+timeCreated: 1459763568
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Debug/Prefabs/CF2-Axis-Debugger.prefab
+  uploadId: 748026

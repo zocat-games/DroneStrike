@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ed609b7cf59d24741820d83f8fc35326
+timeCreated: 1459862362
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Shared-Assets/Demo-Chara/Player/Materials/Player-01
+    - Default.mat
+  uploadId: 748026

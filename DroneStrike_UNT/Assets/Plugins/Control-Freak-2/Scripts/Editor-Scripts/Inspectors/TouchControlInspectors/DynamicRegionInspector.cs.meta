@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8eaa2ac302b964348b575d5ce634a9f4
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/Editor-Scripts/Inspectors/TouchControlInspectors/DynamicRegionInspector.cs
+  uploadId: 748026

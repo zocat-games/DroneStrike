@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7d64fa0beee1b1f47b67ed06e6770722
+timeCreated: 1456598574
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Demo-Dual-Stick-Shooter/Prefab/Scuba-Dude.prefab
+  uploadId: 748026

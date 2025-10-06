@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 29a6d03ad0b5da64eab20053c38b9806
+timeCreated: 1457810155
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Demo-Dual-Stick-Shooter/Prefab/Bullet.prefab
+  uploadId: 748026

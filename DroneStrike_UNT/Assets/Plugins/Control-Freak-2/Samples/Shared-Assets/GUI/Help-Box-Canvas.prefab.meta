@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 16f1a2277783acf499034761574dbc15
+timeCreated: 1457788561
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Shared-Assets/GUI/Help-Box-Canvas.prefab
+  uploadId: 748026

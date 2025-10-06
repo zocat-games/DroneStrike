@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 841777ee2cbfdef4d9c0a1507a9eaf91
+timeCreated: 1457288996
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Rigs/Platforming/CF2-Complete-Physics-Platformer-Kit-Rig.prefab
+  uploadId: 748026

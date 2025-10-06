@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 69623b0af42b123418ccfc4ce07286bc
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/Gamepads/ProfileBanks/BuiltInGamepadProfileBankAndroid.cs
+  uploadId: 748026

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cde9d0ea92575de4e86d9c612eaeb4ad
+timeCreated: 1628534347
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Add-Ons/CF2-Cinemachine.unitypackage
+  uploadId: 748026

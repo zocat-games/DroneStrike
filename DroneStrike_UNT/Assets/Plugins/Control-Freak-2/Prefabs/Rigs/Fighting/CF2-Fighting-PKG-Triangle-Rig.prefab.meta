@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b457acc9aedcddf41a4890e287c85f9a
+timeCreated: 1458661874
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Rigs/Fighting/CF2-Fighting-PKG-Triangle-Rig.prefab
+  uploadId: 748026

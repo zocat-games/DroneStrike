@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 33905c8b496b3e04ea9ab26ec3513c45
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: -495
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/TouchControls/TouchTrackPad.cs
+  uploadId: 748026

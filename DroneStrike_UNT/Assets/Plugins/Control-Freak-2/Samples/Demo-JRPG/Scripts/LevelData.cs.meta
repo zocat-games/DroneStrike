@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 84538904b2e0a0542a719800307c6eaa
+timeCreated: 1456943487
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Demo-JRPG/Scripts/LevelData.cs
+  uploadId: 748026

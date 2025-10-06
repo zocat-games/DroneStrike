@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 49526fc8b8a787b44b2f67578bb7ab7e
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/Internal/InputBindings/TouchGestureStateBinding.cs
+  uploadId: 748026

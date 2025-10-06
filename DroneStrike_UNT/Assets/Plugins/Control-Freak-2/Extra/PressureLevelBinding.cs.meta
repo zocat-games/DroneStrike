@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: edf036943fadc0642959949e80a8eb70
+timeCreated: 1536999263
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Extra/PressureLevelBinding.cs
+  uploadId: 748026

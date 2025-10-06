@@ -1,0 +1,19 @@
+{
+    "name": "Zocat.ToRuntime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ee346f205c87d4ef1835df9e810e1d48",
+        "GUID:1be7bda0db8fd4831b93fdd5dee274ef"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

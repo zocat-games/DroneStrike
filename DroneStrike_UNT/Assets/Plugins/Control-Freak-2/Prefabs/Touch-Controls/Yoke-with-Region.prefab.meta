@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 014764d45100a924286c34313eb2503d
+timeCreated: 1459699022
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Touch-Controls/Yoke-with-Region.prefab
+  uploadId: 748026

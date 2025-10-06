@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb1d533a1dd17f44396569844a4f6d20
+timeCreated: 1455805582
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Demo-Dual-Stick-Shooter/CF2-Dual-Stick-Shooter.unity
+  uploadId: 748026

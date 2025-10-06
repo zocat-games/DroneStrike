@@ -1,0 +1,18 @@
+{
+    "name": "Zocat.Tools",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fb6249b03580a8f46be5625e12c09fc2",
+        "GUID:37a5b28b0679c474b8ff4eb4779c0304",
+        "GUID:d8e89a79cd8df884b8d5b3356783eb74"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

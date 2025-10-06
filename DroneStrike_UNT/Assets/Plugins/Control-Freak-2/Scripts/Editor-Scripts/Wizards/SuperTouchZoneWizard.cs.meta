@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8fb154a5435872e49a50172d3c9c6d8d
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/Editor-Scripts/Wizards/SuperTouchZoneWizard.cs
+  uploadId: 748026

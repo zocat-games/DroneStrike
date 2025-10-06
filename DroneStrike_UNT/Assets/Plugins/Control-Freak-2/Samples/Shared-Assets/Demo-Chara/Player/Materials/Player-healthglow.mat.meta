@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bbf78acabe03c5347b91673fb89d42ec
+timeCreated: 1459862362
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Shared-Assets/Demo-Chara/Player/Materials/Player-healthglow.mat
+  uploadId: 748026

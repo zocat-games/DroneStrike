@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 404e646c32980134f93c266e99792d6b
+timeCreated: 1457006553
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Demo-Swipe-Slasher/Animations/CF2-Swipe-Slasher-AnimCtrl.controller
+  uploadId: 748026

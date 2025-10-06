@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b30311d5fe8034442be6520b56c75251
+timeCreated: 1456684383
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Shared-Assets/Level-Elements/GROUND.prefab
+  uploadId: 748026

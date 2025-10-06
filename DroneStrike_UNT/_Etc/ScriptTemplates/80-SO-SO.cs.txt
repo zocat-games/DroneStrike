@@ -1,0 +1,10 @@
+using UnityEngine;
+namespace Zocat
+{
+    [CreateAssetMenu(fileName = "#SCRIPTNAME#", menuName = "ScriptableObjects/#SCRIPTNAME#", order = 1)]
+    public class #SCRIPTNAME# : ScriptableObject
+    {
+      
+    }
+}
+

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6f76f258a24785a4f9a854f65082b5f7
+timeCreated: 1459271256
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Rigs/Platforming/CF2-Corgi-Engine-Jetpack-Rig.prefab
+  uploadId: 748026

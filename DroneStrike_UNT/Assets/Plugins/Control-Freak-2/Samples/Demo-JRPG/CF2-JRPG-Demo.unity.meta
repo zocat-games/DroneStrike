@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0c01c89ee18c788479d27862a54de6d9
+timeCreated: 1456943290
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Demo-JRPG/CF2-JRPG-Demo.unity
+  uploadId: 748026

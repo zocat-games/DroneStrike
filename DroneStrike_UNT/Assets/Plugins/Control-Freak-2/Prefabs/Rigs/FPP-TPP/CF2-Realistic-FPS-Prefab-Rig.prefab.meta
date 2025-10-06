@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aa9fda728c7bfeb438662815b19b7065
+timeCreated: 1459336210
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Rigs/FPP-TPP/CF2-Realistic-FPS-Prefab-Rig.prefab
+  uploadId: 748026

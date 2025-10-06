@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2592a078a10c94fb0b2fa9a4fb115341, type: 3}
+  m_Name: HeroWeaponConfigSniperSO
+  m_EditorClassIdentifier: Zocat::Zocat.WeaponConfigSO
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Category: 203
+  ItemType: 20
+  FireRate: 0.1
+  ReloadDuration: 0
+  ClipCurrent: 11
+  ClipMax: 11
+  StockCurrent: 11
+  InfiniteAmmo: 1
+  DamageAmount: 2
+  AudioClip: {fileID: 8300000, guid: b0d9b2650f3cd4069b968903c9f836f8, type: 3}
+  ZoomAmount: 30
+  RapidFire: 0
+  Owner: {fileID: 0}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1d57f52e4b3d2244880f650390d1fd00
+timeCreated: 1455366874
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Other/CF2-Gamepad-Notifier.prefab
+  uploadId: 748026

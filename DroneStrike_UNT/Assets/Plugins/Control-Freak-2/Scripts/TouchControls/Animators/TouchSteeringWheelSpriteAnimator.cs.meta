@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5b4e2318d912a5b4a86551955a5ac5ce
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: -480
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/TouchControls/Animators/TouchSteeringWheelSpriteAnimator.cs
+  uploadId: 748026

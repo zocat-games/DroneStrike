@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 985efc7b12b3e7145aedc822ce26e703
+timeCreated: 1480270407
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Debug/Prefabs/CF2-Gamepad-Mapping-Tester.prefab
+  uploadId: 748026

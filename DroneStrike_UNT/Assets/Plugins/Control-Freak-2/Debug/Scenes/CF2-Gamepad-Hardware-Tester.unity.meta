@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f97b05c448b48634ab0cf35f17de0901
+timeCreated: 1459762607
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Debug/Scenes/CF2-Gamepad-Hardware-Tester.unity
+  uploadId: 748026

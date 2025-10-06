@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 95dd895445811bf47b538bf499aece21
+timeCreated: 1457785841
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Shared-Assets/Scripts/Modes/HelpBoxState.cs
+  uploadId: 748026

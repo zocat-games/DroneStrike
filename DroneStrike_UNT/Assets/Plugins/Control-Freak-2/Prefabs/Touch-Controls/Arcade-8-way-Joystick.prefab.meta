@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d70a383b08745b046b77374723bdfe8a
+timeCreated: 1459015508
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Touch-Controls/Arcade-8-way-Joystick.prefab
+  uploadId: 748026

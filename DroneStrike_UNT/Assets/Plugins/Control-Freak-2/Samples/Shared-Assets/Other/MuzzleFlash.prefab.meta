@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b844d401f9ae7ff42a3f81cc202ca9bc
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Samples/Shared-Assets/Other/MuzzleFlash.prefab
+  uploadId: 748026

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ea0b14f8ace3b474f91e89f8e851c6ac
+timeCreated: 1627653320
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Prefabs/Rigs/Mouse/CF2-Mouse-With-RMB-Rig.prefab
+  uploadId: 748026

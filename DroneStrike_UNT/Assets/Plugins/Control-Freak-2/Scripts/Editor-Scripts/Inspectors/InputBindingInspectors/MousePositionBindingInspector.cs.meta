@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c32db4b8311102a4c847f265b2e21477
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11562
+  packageName: Control Freak 2 - Touch Input Made Easy!
+  packageVersion: 2.8.10
+  assetPath: Assets/Plugins/Control-Freak-2/Scripts/Editor-Scripts/Inspectors/InputBindingInspectors/MousePositionBindingInspector.cs
+  uploadId: 748026

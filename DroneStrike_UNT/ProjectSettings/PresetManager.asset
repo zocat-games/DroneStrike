@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1386491679 &1
+PresetManager:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_DefaultPresets:
+  - first:
+      m_NativeTypeID: 1020
+      m_ManagedTypePPtr: {fileID: 0}
+      m_ManagedTypeFallback: 
+    second:
+    - m_Preset: {fileID: 2655988077585873504, guid: ed0310804d2b749c7bbaa8ee560d86c1, type: 2}
+      m_Filter: glob:"Audios/*"
+      m_Disabled: 0
+  - first:
+      m_NativeTypeID: 1006
+      m_ManagedTypePPtr: {fileID: 0}
+      m_ManagedTypeFallback: 
+    second:
+    - m_Preset: {fileID: 2655988077585873504, guid: c7c5e5f69e631430cae281845a15ae30, type: 2}
+      m_Filter: glob:"*.png"
+      m_Disabled: 0
+    - m_Preset: {fileID: 2655988077585873504, guid: c7c5e5f69e631430cae281845a15ae30, type: 2}
+      m_Filter: glob:"*.psd"
+      m_Disabled: 0

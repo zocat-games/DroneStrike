@@ -1,0 +1,19 @@
+{
+    "name": "Zocat.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:68b2ffc6414f14894a75d6b2a41c3172",
+        "GUID:3b40dad3289454b2b91bdda04ed01f69"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
