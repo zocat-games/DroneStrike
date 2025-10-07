@@ -7,7 +7,7 @@ namespace Zocat
         public void ShowUi()
         {
             UiManager.HideAll();
-            UiManager.ShowPanelOnSideBar(PanelType.Map);
+            UiManager.ShowPanelOnSideBar(PanelType.Stock);
             EventHandler.ExecuteEvent(EventManager.CurrencyChanged);
         }
 

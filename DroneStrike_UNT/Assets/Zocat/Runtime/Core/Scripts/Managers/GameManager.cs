@@ -17,8 +17,8 @@ namespace Zocat
             IEnumerator StartIE()
             {
                 yield return new WaitForSeconds(1);
-                // StreamingManager.ShowUi();
-                StreamingManager.CreateLevel();
+                StreamingManager.ShowUi();
+                // StreamingManager.CreateLevel();
                 CurrencyType.Silver.SetAmount(5000);
             }
         }

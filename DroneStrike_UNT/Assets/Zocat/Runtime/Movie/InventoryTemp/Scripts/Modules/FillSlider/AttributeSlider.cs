@@ -20,7 +20,7 @@ namespace Zocat
             /*--------------------------------------------------------------------------------------*/
             var raw = itemType.GetAttributeValue<Vector2>(attributeType);
             var value = ItemCalculator.GetVector2Value(itemType, attributeType);
-            Value.text = $"{(int)value.x}/{(int)(value.y)}";
+            Value.text = $"{value.x}/{value.y}";
             SetFill(value.x / value.y);
             /*--------------------------------------------------------------------------------------*/
             Difference.fillAmount = (value.x + raw.y) / value.y;
