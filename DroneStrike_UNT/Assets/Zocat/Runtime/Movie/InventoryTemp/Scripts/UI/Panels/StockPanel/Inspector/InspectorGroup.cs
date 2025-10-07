@@ -45,7 +45,7 @@ namespace Zocat
         private void SetDescriptoion(ItemType itemType)
         {
             Description.SetActive(true);
-            Description.text = itemType.Description().Bold() == string.Empty ? itemType.Category().ToString().Bold() : $"{Description.text = itemType.Category().ToString().Bold()}\n{itemType.Description()}";
+            Description.text = itemType.Description().Bold() == string.Empty ? itemType.Category().ToString().Bold() : $"{Description.text = itemType.Name().ToString().Bold()}\n{itemType.Description()}";
         }
 
         private void HideAll()
