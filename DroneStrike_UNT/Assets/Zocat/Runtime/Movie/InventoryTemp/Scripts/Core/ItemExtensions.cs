@@ -258,9 +258,9 @@ namespace Zocat
         {
             switch (categoryType)
             {
-                case CategoryType.Pistol: return 0;
-                case CategoryType.MachineGun: return 1;
-                case CategoryType.Sniper: return 2;
+                case CategoryType.MachineGun: return 0;
+                case CategoryType.Unguided: return 1;
+                case CategoryType.Guided: return 2;
             }
 
             return -1;

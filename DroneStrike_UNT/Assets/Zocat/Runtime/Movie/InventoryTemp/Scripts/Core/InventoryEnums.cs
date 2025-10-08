@@ -36,10 +36,10 @@ namespace Zocat
         _Rifle = 108,
         Explosive = 201,
         Helmet = 202,
-        MachineGun = 203,
+        Unguided = 203,
         Medical = 204,
-        Pistol = 205,
-        Sniper = 206,
+        MachineGun = 205,
+        Guided = 206,
         Vest = 207
     }
 

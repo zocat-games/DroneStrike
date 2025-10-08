@@ -13,11 +13,13 @@ namespace Zocat
         {
             // ResetDisplay();
             base.SetVisuals(itemType);
-            FillRatio.SetActive(ItemType.Purchased());
-            Text.SetActive(ItemType.Purchased());
-            Text.text = $"{itemType.Durability()}%";
-            FillRatio.SetFill(itemType.Durability() / 100f);
-            FillRatio.Fill.color = InventoryDepot.ColorsDic[ColorType.Durability1];
+            // FillRatio.SetActive(ItemType.Purchased());
+            // Text.SetActive(ItemType.Purchased());
+            // Text.text = $"{itemType.Durability()}%";
+            // FillRatio.SetFill(itemType.Durability() / 100f);
+            // FillRatio.Fill.color = InventoryDepot.ColorsDic[ColorType.Durability1];
+            FillRatio.SetActive(false);
+            Text.SetActive(false);
         }
     }
 }

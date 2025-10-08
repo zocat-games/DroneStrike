@@ -16,7 +16,7 @@ namespace Zocat
         public void Show()
         {
             foreach (var item in SlotDisplays) item.Value.SetVisuals();
-            OnClickSlot(CategoryType.Pistol);
+            OnClickSlot(CategoryType.MachineGun);
         }
 
         public void OnClickSlot(CategoryType category)

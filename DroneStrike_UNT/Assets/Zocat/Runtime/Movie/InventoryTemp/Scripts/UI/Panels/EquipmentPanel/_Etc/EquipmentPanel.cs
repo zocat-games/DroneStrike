@@ -28,21 +28,21 @@ namespace Zocat
         public override void Hide()
         {
             base.Hide();
-            if (!CategoryType.Pistol.ItemTypeList().Any(item => item.Equipped()))
-            {
-                var heighest = CategoryType.Pistol.HeighestIndexPurchased();
-                heighest.SetCategoryEquipping();
-            }
-
             if (!CategoryType.MachineGun.ItemTypeList().Any(item => item.Equipped()))
             {
                 var heighest = CategoryType.MachineGun.HeighestIndexPurchased();
                 heighest.SetCategoryEquipping();
             }
 
-            if (!CategoryType.Sniper.ItemTypeList().Any(item => item.Equipped()))
+            if (!CategoryType.Unguided.ItemTypeList().Any(item => item.Equipped()))
             {
-                var heighest = CategoryType.Sniper.HeighestIndexPurchased();
+                var heighest = CategoryType.Unguided.HeighestIndexPurchased();
+                heighest.SetCategoryEquipping();
+            }
+
+            if (!CategoryType.Guided.ItemTypeList().Any(item => item.Equipped()))
+            {
+                var heighest = CategoryType.Guided.HeighestIndexPurchased();
                 heighest.SetCategoryEquipping();
             }
         }

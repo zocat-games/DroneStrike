@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37a44df922c40df4fa80e23de1480e3f, type: 3}
   m_Name: MachineGun
   m_EditorClassIdentifier: Opsive.UltimateInventorySystem::Opsive.UltimateInventorySystem.Core.ItemCategory
-  m_ID: 365993861
+  m_ID: 1572433461
   m_ParentsData:
     m_ObjectType: 'Opsive.Shared.Utility.ResizableArray`1[[Opsive.UltimateInventorySystem.Core.ItemCategory,
       Opsive.UltimateInventorySystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
@@ -21,7 +21,7 @@ MonoBehaviour:
     m_ValuePositions: 000000000400000008000000
     m_Values: 010000000100000000000000
     m_UnityObjects:
-    - {fileID: 11400000, guid: 945d9855b0857483992d189f0ae7d7fd, type: 2}
+    - {fileID: 11400000, guid: 41f5ad9e3562b4347947bc016f14b7fd, type: 2}
     m_Version: 3.4
   m_ChildrenData:
     m_ObjectType: 'Opsive.Shared.Utility.ResizableArray`1[[Opsive.UltimateInventorySystem.Core.ItemCategory,
@@ -36,19 +36,17 @@ MonoBehaviour:
     m_ObjectType: 'Opsive.Shared.Utility.ResizableArray`1[[Opsive.UltimateInventorySystem.Core.ItemDefinition,
       Opsive.UltimateInventorySystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
     m_ValueHashes: 
-    m_LongValueHashes: 4c1e4f8e62aa191ac2330064f10375df07c1b5891de38a2e94c2b5891de38a2ee1ccb5891de38a2e6eceb5891de38a2efbcfb5891de38a2e48c9b5891de38a2e
-    m_ValuePositions: 0000000004000000080000000c0000001000000014000000180000001c000000
-    m_Values: 0600000006000000000000000100000002000000030000000400000005000000
+    m_LongValueHashes: 4c1e4f8e62aa191ac2330064f10375df07c1b5891de38a2e94c2b5891de38a2ee1ccb5891de38a2e6eceb5891de38a2e
+    m_ValuePositions: 0000000004000000080000000c0000001000000014000000
+    m_Values: 040000000400000000000000010000000200000003000000
     m_UnityObjects:
-    - {fileID: 11400000, guid: 33e4ba54f47484a2e941540210adbc3b, type: 2}
-    - {fileID: 11400000, guid: cb0222f5ecb3f460fa253cbff01389a9, type: 2}
-    - {fileID: 11400000, guid: a30ec8f81b0f54d5ba7e546ad4a22a8f, type: 2}
-    - {fileID: 11400000, guid: 59eeb8d45b2704f5fa71bb4d5655f9fc, type: 2}
-    - {fileID: 11400000, guid: d8394c783face4efca6f0b90f4b90818, type: 2}
-    - {fileID: 11400000, guid: d698088661d9940bfaa25fba62084c25, type: 2}
+    - {fileID: 11400000, guid: 9d078b42ba42842a2b5c7676ae9d5dca, type: 2}
+    - {fileID: 11400000, guid: 05db2df0b57a84325b1a1db939d1fb3a, type: 2}
+    - {fileID: 11400000, guid: 80e6f90a765154c3caff9c9da6f12271, type: 2}
+    - {fileID: 11400000, guid: bcef1c8a978f9472ba2dff82e5316cc1, type: 2}
     m_Version: 3.4
   m_IsAbstract: 0
-  m_Color: {r: 0.8113208, g: 0.48017535, b: 0.34825563, a: 1}
+  m_Color: {r: 0.7529412, g: 0.3372549, b: 0.2901961, a: 1}
   m_EditorIcon: {fileID: 0}
   m_ItemCategoryAttributeCollection:
     m_AttributeCollectionData:
@@ -56,8 +54,8 @@ MonoBehaviour:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]'
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa65195fdf7a7e477b768d9cf911486f57b1d
-      m_ValuePositions: 000000000c0000000d0000000d0000001100000011000000150000001f000000
-      m_Values: 43617465676f72794e616d65010100000054cc80b64d616368696e6547756e4d616368696e6547756e
+      m_ValuePositions: 000000000c0000000d0000000d0000001100000011000000150000001b000000
+      m_Values: 43617465676f72794e616d65010100000054cc80b6506973746f6c506973746f6c
       m_UnityObjects: []
       m_Version: 3.4
   m_RequiredItemDefinitionAttributes:
@@ -91,7 +89,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa651cc215ba7e477b76810f4f41386f57b1d
       m_ValuePositions: 000000000800000009000000090000000d0000000d0000001100000015000000
-      m_Values: 50726963654d756c01010000008c98cbbc6666a63f6666a63f
+      m_Values: 50726963654d756c01010000008c98cbbccdcc8c3fcdcc8c3f
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: 'Opsive.UltimateInventorySystem.Core.AttributeSystem.Attribute`1[[System.Int32,
@@ -99,7 +97,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa651424b280f5394b559861dc27bf4117a0e
       m_ValuePositions: 000000000500000006000000060000000a0000000a0000000e00000012000000
-      m_Values: 507269636500000000009611dd44140000000a000000
+      m_Values: 507269636500000000009611dd44000000000a000000
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: 'Opsive.UltimateInventorySystem.Core.AttributeSystem.Attribute`1[[System.Int32,
@@ -115,7 +113,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa651dc72be8b8206f239204558f82384b6ee
       m_ValuePositions: 00000000090000000a0000000a0000000e0000000e0000001200000013000000
-      m_Values: 5261706964466972650101000000c84652070101
+      m_Values: 5261706964466972650100000000c84652070000
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: 'Opsive.UltimateInventorySystem.Core.AttributeSystem.Attribute`1[[System.Int32,
@@ -123,7 +121,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa651424b280f5394b559861dc27bf4117a0e
       m_ValuePositions: 000000000d0000000e0000000e0000001200000012000000160000001a000000
-      m_Values: 43617465676f7279496e64657801010000002b5b5a7c0100000001000000
+      m_Values: 43617465676f7279496e64657801000000002b5b5a7c0000000000000000
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: 'Opsive.UltimateInventorySystem.Core.AttributeSystem.Attribute`1[[UnityEngine.AudioClip,
@@ -157,7 +155,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa6515d381c765d7637d5a10ab6e2fef3fb89
       m_ValuePositions: 00000000090000000a0000000a0000000e0000000e000000120000001a000000
-      m_Values: 44616d6167654d696e0101000000471058260000c8420000a0400000c8420000a040
+      m_Values: 44616d6167654d696e010100000047105826000048420000a040000048420000a040
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: 'Opsive.UltimateInventorySystem.Core.AttributeSystem.Attribute`1[[UnityEngine.Vector2,
@@ -165,7 +163,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa6515d381c765d7637d5a10ab6e2fef3fb89
       m_ValuePositions: 0000000011000000120000001200000016000000160000001a00000022000000
-      m_Values: 45666665637469766552616e67654d696e01010000003133a0c400004040cdcc4c3e00004040cdcc4c3e
+      m_Values: 45666665637469766552616e67654d696e01000000003133a0c4000000000000000000000040cdcc4c3e
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: 'Opsive.UltimateInventorySystem.Core.AttributeSystem.Attribute`1[[UnityEngine.Vector2,
@@ -205,7 +203,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: 0d00eb254f8d1b295b713f72e636d894086efd392442dff734ebab2aec72d130f446621b49ba2a58a8823c4a519fa6515d381c765d7637d5a10ab6e2fef3fb89
       m_ValuePositions: 000000000f000000100000001000000014000000140000001800000020000000
-      m_Values: 4d6167617a696e6553697a654d696e0101000000dae0d6fc0000a0410000a0400000a0410000a040
+      m_Values: 4d6167617a696e6553697a654d696e0101000000dae0d6fc0000c8420000a0400000c8420000a040
       m_UnityObjects: []
       m_Version: 3.4
   m_IsMutable: 1

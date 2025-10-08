@@ -1,0 +1,34 @@
+1) Makinalı toplar — (4 adet)
+	•	Browning M2 .50 cal (12.7×99 mm) — uzun menzil ve zırh delme kabiliyeti; hava ve zeminde geniş kullanım.  ￼
+	•	M134 Minigun (7.62 mm çok namlulu Gatling tipi) — yüksek atış hızı, hava platformu/helikopterlerde yaygın.  ￼
+	•	GAU-19 / GAU-19/B (12.7 mm üç namlulu gatling) — helikopter/gun-pod uygulamalarında kullanılan yüksek ateş gücü sistemi.  ￼
+	•	FN MAG / M240 (7.62×51 mm) — daha hafif/orta sınıf makineli; bazı platformlarda pod/entegre silah olarak kullanılıyor.  ￼
+
+2) Güdümsüz (unguided) roket örnekleri — (6 adet)
+	•	Hydra 70 (2.75 in / 70 mm FFAR) — ABD ve müttefiklerinde en yaygın 70 mm roket ailesesi; çeşitli harp başlıklarıyla kullanılır.  ￼
+	•	S-8 (80 mm, Rus) — Sovyet/Rus helikopter ve savaş uçaklarında yaygın kullanılan 80 mm serisi unguided roket.  ￼
+	•	S-13 (122 mm, Rus) — daha büyük mühimmat aralığında (122 mm), penetrasyon / beton/tesis hedefleri için kullanılan unguided roket.  ￼
+	•	Zuni (5 in / 127 mm FFAR) — ABD menşeli 127 mm sınıfı FFAR; tarihsel ve hâlen bazı platformlarda kullanılmıştır.  ￼
+	•	S-5 (57 mm, Rus klasik) — küçük çaplı, yakın destek için kullanılan eski tip unguided roket (Sovyet dönemi). (kaynak: genel roket aile literatürü ve hizmet geçmişi).
+	•	CRV7 (70 mm, Kanada yapımı) — Hydra 70 ile rekabet eden, yüksek performanslı 70 mm roket. (çeşitli üretici ve kullanıcı raporlarında yer alır).
+
+(Not: 70–127 mm arası roket aileleri, oyun için farklı ağırlık/hasar kategorileri oluşturmak açısından kullanışlıdır.)
+
+3) Güdümlü mühimmat örnekleri — (5 adet)
+	•	AGM-114 Hellfire — özellikle insansız hava araçlarında (MQ-1/MQ-9 gibi) çok yaygın kullanılan lazer/termal güdümlü anti-zırh roketi/füze.  ￼
+	•	AGM-65 Maverick — yakın hava desteği için kullanılan, çeşitli arayıcı tipleri (IR, TV, lazer) olan güdümlü hava-yüzey füze/mermi.  ￼
+	•	GBU-12 Paveway II (laser-guided bomb / 500 lb sınıfı) — Mk-82 tabanlı lazer güdümlü bombalardan biri; çok yaygın.  ￼
+	•	GBU-31/32/38 JDAM (GPS/INS) kitli bombalar — “dumb” bombaları GPS/INS ile hassas hale getiren kit; ihtiyaca göre farklı ağırlıklarla kullanılır.  ￼
+	•	APKWS (laser-guided kit — Hydra 70 temelli) — 70 mm unguided roketlere takılan lazer yönlendirme kiti; hem maliyet hem hassasiyet dengesiyle modern çatışmalarda yaygın.  ￼
+-------
+
+	1.	Shipunov 2A42 (30 mm)
+	2.	M230 Chain Gun (30 mm)
+	3.	M197 (20 mm Gatling) 
+	4.	Yak-B / Yak-B-12.7 (12.7 mm) 
+
+
+	Yak-B / Yak-B-12.7 (12.7 mm)
+	M197 (20 mm Gatling) 
+	M230 Chain Gun (30 mm)
+	Shipunov 2A42 (30 mm)

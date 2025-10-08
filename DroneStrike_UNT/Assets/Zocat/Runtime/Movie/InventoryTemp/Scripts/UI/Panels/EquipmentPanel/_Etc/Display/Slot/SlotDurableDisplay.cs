@@ -7,8 +7,8 @@ namespace Zocat
             base.SetVisuals();
             if (_itemType != 0)
             {
-                FillRatio.SetActive(true);
-                FillRatio.SetFill(_itemType.Durability() / 100f);
+                // FillRatio.SetActive(true);
+                // FillRatio.SetFill(_itemType.Durability() / 100f);
             }
         }
     }
