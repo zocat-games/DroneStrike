@@ -1,0 +1,51 @@
+Enemy Units;
+	Infantry
+	Armed
+	Unarmed
+
+
+
+
+
+
+Support
+	Level 1
+	Helicopter Support with minigun
+	Jammer.
+
+
+	Air Strike
+	Cluster Bomb
+	Cruise Missile
+	Atomic Bomb
+
+
+	---
+	Destroy all vehicles.
+	Destroy all infantries.
+	Stop all vehicles
+	Military mine
+
+	---------------------
+	---------- DEFENSE -----------
+	Medic for friendly
+	Armor for a time
+	Shield for time
+	Auto flare for a time
+
+
+	Weapon CARTS
+	------------
+	Ammo +X
+	Damage +X
+	Hellfire aut track target
+
+/////////////////////////
+
+Buttons
+	Weapon Upgrades
+	Drone Cards
+	Home
+	Super Cards
+	Support Cards
+
