@@ -26,7 +26,7 @@ namespace Zocat
         public override void Show()
         {
             base.Show();
-            ProgressManager.Check();
+            // ProgressManager.Check();
             ShowcaseGroup.ShowcaseTabGroup.StockTabButtons[CategoryType._Gun].Click();
         }
         /*--------------------------------------------------------------------------------------*/
@@ -42,7 +42,7 @@ namespace Zocat
             ShowcaseGroup.Showcase.Displays.ForEach(_ => _.SetHighlight(false));
             ShowcaseGroup.Showcase.Displays.FirstOrDefault(_ => _.ItemType == itemType).SetHighlight(true);
             InspectorGroup.Show(itemType);
-            WeaponStudio.Show(itemType);
+            // WeaponStudio.Show(itemType);
         }
 
         public void RefreshPanel(ItemType itemType)

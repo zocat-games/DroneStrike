@@ -21,7 +21,7 @@ namespace Zocat
 
         public void Hightlight(bool clicked)
         {
-            _image.color = clicked ? InventoryDepot.ColorsDic[ColorType.ItemButton1] : InventoryDepot.ColorsDic[ColorType.ItemButton0];
+            // _image.color = clicked ? InventoryDepot.ColorsDic[ColorType.ItemButton1] : InventoryDepot.ColorsDic[ColorType.ItemButton0];
         }
     }
 }

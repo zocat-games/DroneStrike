@@ -11,8 +11,8 @@ namespace Zocat
 
         public void SetText(string text)
         {
-            Fill.color = InventoryDepot.ColorsDic[ColorType];
-            Tmp.text = text;
+            // Fill.color = InventoryDepot.ColorsDic[ColorType];
+            // Tmp.text = text;
         }
     }
 }

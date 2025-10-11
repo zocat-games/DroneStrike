@@ -29,7 +29,7 @@ namespace Zocat
             if (selected && _selected) _selected = false;
             else if (!_selected && selected) _selected = true;
             else _selected = false;
-            _baseImage.color = _selected ? InventoryDepot.ColorsDic[ColorType.ItemButton1] : InventoryDepot.ColorsDic[ColorType.ItemButton0];
+            // _baseImage.color = _selected ? InventoryDepot.ColorsDic[ColorType.ItemButton1] : InventoryDepot.ColorsDic[ColorType.ItemButton0];
         }
 
         public override void SetVisuals()
@@ -44,7 +44,7 @@ namespace Zocat
             //     Icon.sprite = InventoryDepot.Icon;
             //     return;
             // }
-            Icon.sprite = _itemType == 0 ? InventoryDepot.Plus : _itemType.Icon();
+            // Icon.sprite = _itemType == 0 ? InventoryDepot.Plus : _itemType.Icon();
         }
     }
 }

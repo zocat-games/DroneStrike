@@ -22,11 +22,11 @@ namespace Zocat
 
         private Color GetColor(AlertType alertType)
         {
-            switch (alertType)
-            {
-                case AlertType.Info: return InventoryDepot.ColorsDic[ColorType.BlackAlpha0];
-                case AlertType.Warning: return InventoryDepot.ColorsDic[ColorType.RedAlpha0];
-            }
+            // switch (alertType)
+            // {
+            //     case AlertType.Info: return InventoryDepot.ColorsDic[ColorType.BlackAlpha0];
+            //     case AlertType.Warning: return InventoryDepot.ColorsDic[ColorType.RedAlpha0];
+            // }
 
             return default;
         }

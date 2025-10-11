@@ -59,7 +59,7 @@ namespace Zocat
 
         public void SetHighlight(bool selected)
         {
-            _image.color = selected ? InventoryDepot.ColorsDic[ColorType.ItemButton1] : InventoryDepot.ColorsDic[ColorType.ItemButton0];
+            // _image.color = selected ? InventoryDepot.ColorsDic[ColorType.ItemButton1] : InventoryDepot.ColorsDic[ColorType.ItemButton0];
         }
 
         public void SetIcon(Sprite sprite)

@@ -24,8 +24,8 @@ namespace Zocat
 
         public void SetHighlight(bool selected)
         {
-            var color = selected ? InventoryDepot.ColorsDic[ColorType.Khaki1] : InventoryDepot.ColorsDic[ColorType.Khaki0];
-            _image.color = color;
+            // var color = selected ? InventoryDepot.ColorsDic[ColorType.Khaki1] : InventoryDepot.ColorsDic[ColorType.Khaki0];
+            // _image.color = color;
         }
     }
 }

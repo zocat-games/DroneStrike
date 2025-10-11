@@ -40,7 +40,7 @@ namespace Zocat
             ResetDisplay();
             ItemType = itemType;
             Icon.sprite = itemType.Icon();
-            Icon.material = itemType.Unlocked() ? null : InventoryDepot.White;
+            // Icon.material = itemType.Unlocked() ? null : InventoryDepot.White;
             ItemTitle.Title.text = itemType.Name();
             FillRatio.SetActive(ItemType.Unlocked());
             Text.SetActive(ItemType.Unlocked());
@@ -55,7 +55,7 @@ namespace Zocat
 
         public void SetHighlight(bool selected)
         {
-            _image.color = selected ? InventoryDepot.ColorsDic[ColorType.ItemButton1] : InventoryDepot.ColorsDic[ColorType.ItemButton0];
+            // _image.color = selected ? InventoryDepot.ColorsDic[ColorType.ItemButton1] : InventoryDepot.ColorsDic[ColorType.ItemButton0];
         }
     }
 }

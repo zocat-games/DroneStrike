@@ -22,14 +22,14 @@ namespace Zocat
             }
         }
 
-        public void SetState(bool materialised)
-        {
-            foreach (var item in RendererMats)
-            {
-                var mat = materialised ? item.Material : WeaponStudio.StudioDisable;
-                item.Renderer.material = mat;
-            }
-        }
+        // public void SetState(bool materialised)
+        // {
+        //     foreach (var item in RendererMats)
+        //     {
+        //         var mat = materialised ? item.Material : WeaponStudio.StudioDisable;
+        //         item.Renderer.material = mat;
+        //     }
+        // }
     }
 
 

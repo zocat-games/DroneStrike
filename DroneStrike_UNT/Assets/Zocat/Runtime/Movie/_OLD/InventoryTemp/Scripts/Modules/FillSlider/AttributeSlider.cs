@@ -18,12 +18,12 @@ namespace Zocat
             // Name.text = so.Name;
             // Icon.sprite = so.Sprite;
             /*--------------------------------------------------------------------------------------*/
-            var raw = itemType.GetAttributeValue<Vector2>(attributeType);
-            var value = ItemCalculator.GetVector2Value(itemType, attributeType);
-            Value.text = $"{value.x}/{value.y}";
-            SetFill(value.x / value.y);
+            // var raw = itemType.GetAttributeValue<Vector2>(attributeType);
+            // var value = ItemCalculator.GetVector2Value(itemType, attributeType);
+            // Value.text = $"{value.x}/{value.y}";
+            // SetFill(value.x / value.y);
             /*--------------------------------------------------------------------------------------*/
-            Difference.fillAmount = (value.x + raw.y) / value.y;
+            // Difference.fillAmount = (value.x + raw.y) / value.y;
         }
     }
 }

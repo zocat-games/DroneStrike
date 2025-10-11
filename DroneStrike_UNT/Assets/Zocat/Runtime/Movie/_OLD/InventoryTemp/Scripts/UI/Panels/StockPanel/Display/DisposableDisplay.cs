@@ -6,7 +6,7 @@ namespace Zocat
         {
             base.SetVisuals(itemType);
             Text.text = $"{itemType.Amount()}/{ConfigManager.DisposableMax}";
-            FillRatio.Fill.color = InventoryDepot.ColorsDic[ColorType.Amount0];
+            // FillRatio.Fill.color = InventoryDepot.ColorsDic[ColorType.Amount0];
             FillRatio.SetFill(itemType.Amount() / (float)ConfigManager.DisposableMax);
         }
     }
