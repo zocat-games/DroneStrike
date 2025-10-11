@@ -7,21 +7,21 @@ namespace Zocat
         public void ShowUi()
         {
             UiManager.HideAll();
-            UiManager.ShowPanelOnSideBar(PanelType.Stock);
+            // UiManager.ShowPanel(PanelType.Chest);
             EventHandler.ExecuteEvent(EventManager.CurrencyChanged);
         }
 
         public void CreateLevel()
         {
             LevelManager.CreateCurrentMap();
-            UiManager.ShowActionPanels();
+            // UiManager.ShowActionPanels();
             EventHandler.ExecuteEvent(EventManager.AfterCreateLevel);
         }
 
         public void ExitLevel()
         {
             EventHandler.ExecuteEvent(EventManager.ExitLevel);
-            UiManager.ShowPanelOnSideBar(PanelType.Map);
+            // UiManager.ShowPanelOnSideBar(PanelType.Home);
             LevelManager.DestroyCurrentMap();
         }
 

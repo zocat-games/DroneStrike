@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573e9748875a7bb458e9b588519ef0e5, type: 3}
+  m_Name: ZocatInventoryDatabase
+  m_EditorClassIdentifier: 
+  m_ItemCategories:
+  - {fileID: 11400000, guid: 25596210beda343aab5658ab6c64a28c, type: 2}
+  - {fileID: 11400000, guid: df67c1e5730cc4f13810b77106fafbb9, type: 2}
+  - {fileID: 11400000, guid: 362f4598ad87f43e5a91e9a3d477c1f8, type: 2}
+  m_ItemDefinitions: []
+  m_Currencies:
+  - {fileID: 11400000, guid: e55758c3c51624b338c49705dd3c037e, type: 2}
+  - {fileID: 11400000, guid: 9cb97fa3ea0d3482e9149d0aafdf5bda, type: 2}
+  m_CraftingRecipes: []
+  m_CraftingCategories:
+  - {fileID: 11400000, guid: b0c669af4344f462788e435d7b97e033, type: 2}

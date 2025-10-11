@@ -6,25 +6,10 @@ namespace Zocat
     {
         public TopBarPanel TopBarPanel;
         public MessagePanel MessagePanel;
-        public DisplayDepotPanel DisplayDepotPanel;
-        /*--------------------------------------------------------------------------------------*/
-        public SideBarPanel SideBarPanel;
-        public MapPanel MapPanel;
-        public EquipmentPanel EquipmentPanel;
-        public StockPanel StockPanel;
-        public ChestPanel ChestPanel;
-        public MarketPanel MarketPanel;
-        /*--------------------------------------------------------------------------------------*/
-        public GamepadPanel GamepadPanel;
-        public WeaponPanel WeaponPanel;
-        public CrosshairPanel CrosshairPanel;
-        public ReloadPanel ReloadPanel;
-        /*--------------------------------------------------------------------------------------*/
-        public BackButtonPanel BackButtonPanel;
-        public HealthPanel HealthPanel;
+        public HomePanel HomePanel;
 
         /*--------------------------------------------------------------------------------------*/
-        public GameSectionType GameSectionType;
+        public GameSectionType GameSectionType { get; set; }
         /*--------------------------------------------------------------------------------------*/
         private List<UIPanel> _UiPanels;
         public Dictionary<PanelType, UIPanel> PanelDic;
@@ -33,9 +18,7 @@ namespace Zocat
         {
             _UiPanels = new List<UIPanel>
             {
-                MapPanel, SideBarPanel, EquipmentPanel, StockPanel, DisplayDepotPanel,
-                TopBarPanel, MessagePanel, ChestPanel, MarketPanel, GamepadPanel, WeaponPanel,
-                CrosshairPanel, ReloadPanel, BackButtonPanel, HealthPanel
+                TopBarPanel, MessagePanel, HomePanel
             };
 
             _UiPanels.ForEach(_UiPanel =>
@@ -46,25 +29,25 @@ namespace Zocat
             });
         }
 
-        private void ShowDefaults()
-        {
-            GameSectionType = GameSectionType.Ui;
-            _UiPanels.ForEach(_ => _.Hide());
-            TopBarPanel.Show();
-            SideBarPanel.Show();
-        }
-
         public void HideAll()
         {
             _UiPanels.ForEach(_ => _.Hide());
         }
 
-        /*--------------------------------------------------------------------------------------*/
-        public void ShowPanelOnSideBar(PanelType panelType)
+        public void ShowHome()
         {
-            ShowDefaults();
-            SideBarPanel.SetVisuals(panelType);
-            PanelDic[panelType].Show();
+            HideAll();
+            HomePanel.Show();
+        }
+        
+
+
+        /*--------------------------------------------------------------------------------------*/
+        private void ShowDefaults()
+        {
+            GameSectionType = GameSectionType.Ui;
+            _UiPanels.ForEach(_ => _.Hide());
+            TopBarPanel.Show();
         }
 
         public void ShowPanel(PanelType panelType)
@@ -76,18 +59,13 @@ namespace Zocat
         public void ShowActionPanels()
         {
             HideAll();
-            // GamepadPanel.Show();
-            CrosshairPanel.Show();
-            WeaponPanel.Show();
-            BackButtonPanel.Show();
-            HealthPanel.Show();
             GameSectionType = GameSectionType.Action;
         }
     }
 
     public enum PanelType
     {
-        Map = 0,
+        Home = 0,
         Equipment = 1,
         Stock = 2,
         Chest = 3,
